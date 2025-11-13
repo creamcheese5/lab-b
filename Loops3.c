@@ -29,5 +29,7 @@ int main () {
     while (c <= 5);
     printf("\n");
 
+    printf("End.");
+
 return 0;
 }
