@@ -14,22 +14,26 @@ int main () {
     int notAnswer = !((ClassA > ClassB) && (ClassA < 100));
 
 
-    printf ("There are 51 students from Class A, while Class B has 49.\n\n");
+    printf("In our school, Class A has %d students, while Class B has %d.\n\n", ClassA, ClassB);
 
-    printf ("The total number of Class A students added to Class B = %d\n", sum);        // arithmetic operators
-    printf ("The total number of Class A students subtracted from Class B = %d\n", difference);
-    printf ("The total number of Class A students multiplied by Class B = %d\n", product);
-    printf ("The total number of Class A students divided by Class B = %.2f\n\n", quotient);
+    printf("If we combine both classes, we now have a total of %d students.\n", sum);  
+    printf("If we compare Class A and Class B, the difference between their sizes is %d students.\n", difference);
+    printf("Multiplying the number of students in Class A and Class B gives a product of %d.\n", product);
+    printf("Dividing the number of students in Class A by Class B results in %.2f.\n\n", quotient);
 
-    printf ("Class A has more students than Class B AND has less than 100 = %s\n", andAnswer ? "True" : "False");       // logical operators
-    printf ("Class A has more students than Class B OR has less than 100 = %s\n", orAnswer ? "True" : "False");
-    printf ("It is NOT true that Class A has more students than Class B and has less than 100 = %s\n\n", notAnswer ? "True" : "False");
+    printf("Is it TRUE that Class A has more students AND has fewer than 100 students? → %s\n", 
+           andAnswer ? "True" : "False");
+    printf("Is it TRUE that Class A has more students OR has fewer than 100 students? → %s\n", 
+           orAnswer ? "True" : "False");
+    printf("Is the statement NOT true that Class A has more students and has less than 100? → %s\n\n", 
+           notAnswer ? "True" : "False");
 
-    printf ("Number of Class A students added by 10 more is = %d\n", ClassA += 10);         // assignment operators
-    printf ("Number of Class A students subtracted from 10 is = %d\n", ClassA -=10);
-    printf ("Number of Class A students multiplied by 10 is = %d\n", ClassA *=10);
-    printf ("Number of Class A students divided by 10 is = %.2f\n", (float) (ClassA /=10));
-    printf ("Number of Class A students modulo 10 is = %d\n", ClassA %=10);
+    printf("Now let's update Class A using assignment operators:\n");
+    printf("After adding 10 more students to Class A, it becomes %d students.\n", ClassA += 10);
+    printf("After subtracting 10 students, Class A now has %d.\n", ClassA -= 10);
+    printf("Multiplying the count by 10 results in %d students.\n", ClassA *= 10);
+    printf("Dividing that by 10 returns it to %.2f students.\n", (float) (ClassA /= 10));
+    printf("Finding Class A modulo 10 gives us %d.\n", ClassA %= 10);
 
 return 0;
 }
