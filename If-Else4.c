@@ -5,19 +5,24 @@ int main (){
     char choice;
 
     do {
-    printf("Enter number: ");
-    scanf ("%d", &num);
+        printf("Please enter any number to check if it’s even or odd: ");
+        scanf("%d", &num);
 
-    if (num % 2 == 0) {
-    printf ("The number is even.\n");
-    }
-    else {
-    printf ("The number is odd.\n");
-    }
-    printf ("Would you like to enter a new number? (Y/N): ");
-    scanf(" %c", &choice);
+        if (num % 2 == 0) {
+            printf("%d is an EVEN number.\n", num);
+        }
+        else {
+            printf("%d is an ODD number.\n", num);
+        }
+
+        printf("Would you like to test another number? (Y/N): ");
+        scanf(" %c", &choice);
+
+        printf("\n");
     }
     while (choice == 'y' || choice == 'Y');
 
-return 0;
+    printf("Thank you for using the number checker!\n");
+
+    return 0;
 }
