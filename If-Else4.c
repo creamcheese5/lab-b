@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main (){
-    int num;
+    int num;2
     char choice;
 
     do {
-        printf("Please enter any number to check if it’s even or odd: ");
+        printf("Any number: ");
         scanf("%d", &num);
 
         if (num % 2 == 0) {
@@ -15,14 +15,14 @@ int main (){
             printf("%d is an ODD number.\n", num);
         }
 
-        printf("Would you like to test another number? (Y/N): ");
+        printf("Another number? (Y/N): ");
         scanf(" %c", &choice);
 
         printf("\n");
     }
     while (choice == 'y' || choice == 'Y');
 
-    printf("Thank you for using the number checker!\n");
+    printf("End.\n");
 
     return 0;
 }
